@@ -202,6 +202,11 @@ namespace GradeBook.GradeBooks
             }
         }
 
+        public GradeBookType Type
+        {
+            get; set;
+        }
+
         public virtual char GetLetterGrade(double averageGrade)
         {
             if (averageGrade >= 90)
